@@ -46,16 +46,27 @@ class Graph:
 # silahkan buat graph seperti pada soal
 graph = Graph()
 # misalnya 
-graph.addVertex('x')
-graph.addVertex('y')
-graph.addVertex('z')
-graph.addVertex('j')
-graph.addVertex('k')
+graph.addVertex('a')
+graph.addVertex('b')
+graph.addVertex('c')
+graph.addVertex('d')
+graph.addVertex('e')
+graph.addVertex('f')
+graph.addVertex('g')
 
-graph.addEdge('x', 'y')
-graph.addEdge('x','z')
-graph.addEdge('y', 'z')
-graph.addEdge('z', 'j')
+
+graph.addEdge('a', 'b')
+graph.addEdge('b','c')
+graph.addEdge('b', 'd')
+graph.addEdge('b', 'd')
+graph.addEdge('c', 'e')
+graph.addEdge('c', 'g')
+graph.addEdge('d', 'b')
+graph.addEdge('d', 'e')
+graph.addEdge('e', 'c')
+graph.addEdge('e', 'd')
+graph.addEdge('f', 'e')
+graph.addEdge('g', 'c')
 
 # jangan ubah bagian di bawah 
 graph.vertex()
